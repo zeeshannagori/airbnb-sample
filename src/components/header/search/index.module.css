@@ -1,0 +1,102 @@
+@keyframes enlarge {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.searchBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+  margin: 0 auto;
+  border: 1px solid #dddddd;
+  border-radius: 40px;
+  background-color: white;
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 8%), 0px 4px 12px rgb(0 0 0 / 5%);
+  padding: 14px 14px 14px 24px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+.searchBar:hover {
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 18%);
+}
+.searchBar > span {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 14px 0;
+  cursor: pointer;
+}
+
+.searchBar__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 111px);
+  animation: enlarge 0.1s ease-out;
+}
+.searchBar__content > :not(:first-child) {
+  border-left: 1px solid #dddddd;
+  min-width: 125px;
+}
+
+.searchBar__option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 24px;
+  cursor: pointer;
+}
+.searchBar__option:nth-of-type(1) {
+  padding: 0 24px 0 0;
+}
+.searchBar__option > span:nth-of-type(1) {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.08rem;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+.searchBar__option > span:nth-of-type(2) {
+  color: #717171;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+.searchBar__option > input {
+  width: calc(100% + 24px);
+  min-width: 120px;
+  border: 0;
+}
+.searchBar__option > input:focus {
+  outline: 0;
+}
+
+.searchBar button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff385c;
+  border: 0;
+  padding: 16px;
+  color: white;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.searchBar button img {
+  object-fit: contain;
+  height: 16px;
+  width: 16px;
+  filter: brightness(0) invert(100%);
+}
+.searchBar button span {
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 4px;
+}

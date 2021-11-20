@@ -1,0 +1,16 @@
+.logoContainer {
+  display: inline-block;
+  height: 32px;
+  width: 102px;
+}
+
+.logoContainer__logo {
+  object-fit: contain;
+  height: 100%;
+  max-width: 100%;
+  filter: contrast(1.7);
+}
+
+.logoContainer__logo_invert {
+  filter: brightness(0) invert(100%);
+}
