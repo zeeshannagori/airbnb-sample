@@ -29,7 +29,7 @@ export default function SearchBar({ pageScroll }) {
               placeholder="Where are you going?"
               onChange={(e) => setText(e.target.value)}
               value={text}
-              /* autoFocus */
+              autoFocus
             />
           </div>
           <div className={styles.searchBar__option}>

@@ -96,7 +96,12 @@
   filter: brightness(0) invert(100%);
 }
 .searchBar button span {
-  display: inline-block;
-  padding-left: 8px;
-  padding-right: 4px;
+  display: none;
+}
+@media (min-width: 1280px) {
+  .searchBar button span {
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 4px;
+  }
 }
