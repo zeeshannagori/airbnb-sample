@@ -15,7 +15,7 @@ export default function Banner() {
             Online <br />
             Experiences
           </h1>
-          <a href="#">Explore now</a>
+          <a href="https://uniacco.com/">Explore now</a>
         </div>
       </div>
     </section>
